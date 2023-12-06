@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<div>
+<html>
+  <!-- <head> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="mainStyle.css">
+    <title>Memory Card Game</title>
+  </head>
+  
+    <body>
+       <section>
+        
+        <form id="howManyCards">
+          <div>
+            <label for="difficulty6">4 * 2</label>
+          <input type="radio" id="difficulty2" name="difficultyLevel" value="2"/>
+          </div>
+          <div>
+            <label for="difficulty6">4 * 4</label>
+            <input type="radio" id="difficulty4" name="difficultyLevel" value="4"/>
+          </div>
+            <label for="difficulty6">4 * 6</label>
+            <input type="radio" id="difficulty6" name="difficultyLevel" value="6"/>
+          </div>
+          <div>
+            <label for="difficulty8">4 * 8</label>
+            <input type="radio" id="difficulty8" name="difficultyLevel" value="8"/>
+          </div>
+          <div>
+            <label for="difficulty10">4 * 10</label>
+            <input type="radio" id="difficulty10" name="difficultyLevel" value="10"/>
+          </div>
+          <input id="submit" name="submit" type="submit" value="submit">
+        </form>
+        <div id="showLevel"></div>
+       </section>
+       <br>
+       <br>
+       <br>
+       <section id="theGame">
+        <table id="myTable" style="width: 100%" style="height: 100%;">
+        </table>
+       </section>
+       <button id="test" onclick="checkCardsVal()">check Cards Value</button>
+       <div id="checkValue"></div>
+        <script src="main.js"></script>
+    </body>
+</html>
